@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="GeekMatch recomenda games, animes, filmes e séries a partir das preferências de cada pessoa."
+    >
+    <meta name="theme-color" content="#11111b">
+    <title>GeekMatch — descubra seu próximo universo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="catalogo.js" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#inicio" aria-label="GeekMatch, início">
+        <span class="brand-icon" aria-hidden="true">G<span>✦</span></span>
+        <span>geek<span class="brand-accent">match</span></span>
+      </a>
+      <nav aria-label="Navegação principal">
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#recomendador">Recomendador</a>
+        <a href="#sobre">Sobre o projeto</a>
+      </nav>
+      <a class="header-cta" href="#recomendador">Encontrar algo novo <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main>
+      <section class="hero page-width" id="inicio">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="live-dot"></span> SEU PRÓXIMO UNIVERSO COMEÇA AQUI</p>
+          <h1>Seu gosto geek.<br>Seu próximo <span>match.</span></h1>
+          <p class="hero-description">
+            Curte RPG, anime, ficção científica ou fantasia? Conte do que você
+            gosta e descubra games, filmes, animes e séries com características
+            parecidas.
+          </p>
+          <a class="button button-primary" href="#recomendador">
+            Montar minhas recomendações <span aria-hidden="true">↓</span>
+          </a>
+          <p class="hero-footnote"><span aria-hidden="true">✦</span> Sem cadastro. Suas escolhas ficam no seu navegador.</p>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="orbit orbit-three"></div>
+          <div class="orbit-center">GM</div>
+          <div class="orbit-label label-game"><span>🎮</span> GAMES</div>
+          <div class="orbit-label label-anime"><span>⚡</span> ANIMES</div>
+          <div class="orbit-label label-film"><span>🎬</span> FILMES</div>
+          <div class="orbit-label label-series"><span>🌙</span> SÉRIES</div>
+          <span class="spark spark-one">✦</span>
+          <span class="spark spark-two">✳</span>
+        </div>
+        <div class="hero-bottom">
+          <span>RECOMENDAÇÃO BASEADA EM CONTEÚDO</span>
+          <span>GAMES <i>·</i> ANIMES <i>·</i> FILMES <i>·</i> SÉRIES</span>
+        </div>
+      </section>
+
+      <section class="how-section" id="como-funciona">
+        <div class="page-width">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">01 — A IDEIA</p>
+              <h2>Descobrir algo novo<br>começa pelo que você curte.</h2>
+            </div>
+            <p class="section-intro">
+              O GeekMatch compara os elementos dos seus favoritos com um
+              catálogo de demonstração e explica por que cada título combina.
+            </p>
+          </div>
+          <div class="steps-grid">
+            <article class="step-card">
+              <span class="step-number">01</span>
+              <span class="step-icon icon-purple" aria-hidden="true">♡</span>
+              <h3>Conte seus favoritos</h3>
+              <p>Marque títulos que já conhece, como Dragon Ball, e escolha os temas que mais gosta.</p>
+            </article>
+            <article class="step-card">
+              <span class="step-number">02</span>
+              <span class="step-icon icon-blue" aria-hidden="true">⌕</span>
+              <h3>Comparamos características</h3>
+              <p>O algoritmo cruza gêneros, temas e formato com as preferências informadas.</p>
+            </article>
+            <article class="step-card">
+              <span class="step-number">03</span>
+              <span class="step-icon icon-pink" aria-hidden="true">✧</span>
+              <h3>Encontre seu próximo match</h3>
+              <p>Veja sugestões ordenadas pela compatibilidade e entenda o motivo de cada uma.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="recommender-section" id="recomendador">
+        <div class="page-width recommender-layout">
+          <div class="preferences">
+            <div class="recommender-heading">
+              <p class="eyebrow">02 — SEU PERFIL GEEK</p>
+              <h2>O que faz<br>seu tipo?</h2>
+              <p>Escolha alguns favoritos e interesses. Você pode mudar tudo a qualquer momento.</p>
+            </div>
+
+            <fieldset class="preference-group">
+              <legend><span class="legend-number">A</span> Já curto estes conteúdos <small>opcional</small></legend>
+              <p class="group-hint">Selecione títulos para usar suas características no perfil.</p>
+              <div id="favorite-list" class="favorite-list" aria-label="Conteúdos favoritos"></div>
+            </fieldset>
+
+            <fieldset class="preference-group">
+              <legend><span class="legend-number">B</span> Meus interesses</legend>
+              <p class="group-hint">Marque os temas e estilos que mais chamam sua atenção.</p>
+              <div id="interest-list" class="interest-list"></div>
+            </fieldset>
+
+            <fieldset class="preference-group format-group">
+              <legend><span class="legend-number">C</span> Quero descobrir</legend>
+              <div id="format-list" class="format-list"></div>
+            </fieldset>
+
+            <button id="recommend-button" class="button button-primary recommend-button" type="button">
+              <span class="button-label">Encontrar recomendações</span>
+              <span aria-hidden="true">→</span>
+            </button>
+            <p id="profile-status" class="profile-status" role="status" aria-live="polite">
+              Escolha suas preferências e clique para atualizar as sugestões.
+            </p>
+            <button id="reset-button" class="reset-button" type="button">Limpar minhas escolhas</button>
+          </div>
+
+          <div class="recommendations" aria-live="polite">
+            <div class="recommendations-heading">
+              <div>
+                <p class="eyebrow">SELEÇÃO PARA VOCÊ</p>
+                <h2 id="results-title">Seu próximo match</h2>
+              </div>
+              <span id="results-count" class="results-count">— sugestões</span>
+            </div>
+            <p id="results-summary" class="results-summary"></p>
+            <div id="recommendation-list" class="recommendation-list"></div>
+            <div id="empty-state" class="empty-state" hidden>
+              <span aria-hidden="true">✦</span>
+              <h3>Vamos encontrar seu match?</h3>
+              <p>Escolha pelo menos um favorito ou interesse para personalizar as sugestões.</p>
+            </div>
+            <p class="score-note">
+              <span aria-hidden="true">ⓘ</span>
+              Compatibilidade indica características em comum — não é nota de qualidade nem garantia de que você vai gostar.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-section page-width" id="sobre">
+        <div class="about-heading">
+          <p class="eyebrow">03 — A SOLUÇÃO</p>
+          <h2>Recomendação baseada<br>em conteúdo.</h2>
+        </div>
+        <div class="about-content">
+          <p>
+            Cada item do catálogo é representado por características, como
+            formato, gênero e tema. O perfil é formado pelos conteúdos e
+            interesses selecionados. O sistema pontua cada título pela
+            proporção ponderada de características em comum e ordena os
+            resultados do maior para o menor.
+          </p>
+          <div class="formula-box">
+            <span class="formula-label">COMO CALCULAMOS A COMPATIBILIDADE</span>
+            <code>características compatíveis ÷ peso total das preferências × 100</code>
+          </div>
+          <p>
+            É um protótipo explicável de sistema de recomendação — não é uma
+            IA generativa. Não usa token de API, não envia preferências para um
+            servidor e não aprende com outros usuários.
+          </p>
+        </div>
+      </section>
+
+      <section class="impact-section">
+        <div class="page-width impact-layout">
+          <div>
+            <p class="eyebrow">04 — IMPACTO E PRÓXIMOS PASSOS</p>
+            <h2>Menos tempo procurando.<br>Mais tempo explorando.</h2>
+          </div>
+          <div>
+            <p>
+              Um recomendador pode facilitar a descoberta de novos jogos,
+              animes, filmes e séries — e inspirar ferramentas para comunidades
+              e plataformas de entretenimento.
+            </p>
+            <p>
+              Na criação de conteúdo, a mesma abordagem pode ajudar a organizar
+              catálogos por afinidades de gênero e tema. Ela não substitui
+              pesquisa de audiência nem prevê sucesso comercial.
+            </p>
+            <p class="validation-note">
+              <strong>Como saber se funciona de verdade?</strong> Este catálogo
+              é editorial e didático. Para medir a qualidade com pessoas reais,
+              precisaríamos ampliar e revisar os dados, coletar avaliações
+              voluntárias, medir recomendações úteis e comparar os resultados
+              com uma lista sem personalização.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer page-width">
+      <a class="brand" href="#inicio">
+        <span class="brand-icon" aria-hidden="true">G<span>✦</span></span>
+        <span>geek<span class="brand-accent">match</span></span>
+      </a>
+      <p>Projeto educacional · Recomendação baseada em conteúdo · Sem coleta de dados</p>
+      <a href="#recomendador">Voltar ao recomendador ↑</a>
+    </footer>
+  </body>
+</html>
