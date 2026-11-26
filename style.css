@@ -30,7 +30,7 @@ body {
   background: var(--background);
   color: var(--ink);
   font-family: var(--sans);
-  font-size: 15px;
+  font-size: 17px;
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
 }
@@ -120,7 +120,7 @@ input:focus-visible {
 .topbar nav a,
 .header-cta {
   color: #c4c0d0;
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 600;
   text-decoration: none;
   transition: color 160ms ease;
@@ -160,7 +160,7 @@ input:focus-visible {
   margin: 0 0 15px;
   color: var(--purple);
   font-family: var(--mono);
-  font-size: 9px;
+  font-size: 11px;
   font-weight: 500;
   letter-spacing: 0.1em;
   line-height: 1.7;
@@ -206,7 +206,7 @@ h1 span {
   max-width: 520px;
   margin-bottom: 25px;
   color: #b7b3c5;
-  font-size: 14px;
+  font-size: 17px;
   line-height: 1.85;
 }
 
@@ -240,7 +240,7 @@ h1 span {
 .hero-footnote {
   margin: 15px 0 0;
   color: #8c899e;
-  font-size: 9px;
+  font-size: 12px;
 }
 
 .hero-footnote span {
@@ -319,7 +319,7 @@ h1 span {
   background: rgba(29, 28, 42, 0.94);
   color: #e5e0f0;
   font-family: var(--mono);
-  font-size: 8px;
+  font-size: 10px;
   letter-spacing: 0.06em;
   box-shadow: 0 7px 25px rgba(0, 0, 0, 0.15);
 }
@@ -378,7 +378,7 @@ h1 span {
   border-top: 1px solid rgba(185, 176, 222, 0.13);
   color: #777487;
   font-family: var(--mono);
-  font-size: 8px;
+  font-size: 10px;
   letter-spacing: 0.08em;
 }
 
@@ -413,7 +413,7 @@ h2 {
   max-width: 370px;
   margin: 0 0 3px;
   color: var(--muted);
-  font-size: 12px;
+  font-size: 15px;
 }
 
 .steps-grid {
@@ -437,7 +437,7 @@ h2 {
   right: 19px;
   color: #696678;
   font-family: var(--mono);
-  font-size: 9px;
+  font-size: 11px;
 }
 
 .step-icon {
@@ -467,7 +467,7 @@ h2 {
 
 .step-card h3 {
   margin-bottom: 6px;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
 }
 
@@ -475,7 +475,7 @@ h2 {
   max-width: 290px;
   margin-bottom: 0;
   color: var(--muted);
-  font-size: 10px;
+  font-size: 13px;
 }
 
 .recommender-section {
@@ -514,7 +514,7 @@ h2 {
 .recommender-heading > p:last-child {
   margin: 11px 0 0;
   color: var(--muted);
-  font-size: 11px;
+  font-size: 14px;
 }
 
 .preference-group {
@@ -530,7 +530,7 @@ h2 {
   padding: 0;
   color: #eae6f3;
   font-family: var(--display);
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
 }
 
@@ -544,21 +544,21 @@ h2 {
   background: rgba(165, 139, 255, 0.15);
   color: var(--purple);
   font-family: var(--mono);
-  font-size: 9px;
+  font-size: 10px;
 }
 
 .preference-group legend small {
   margin-left: 4px;
   color: #797688;
   font-family: var(--sans);
-  font-size: 9px;
+  font-size: 11px;
   font-weight: 400;
 }
 
 .group-hint {
   margin: 6px 0 11px;
   color: #8c899e;
-  font-size: 9px;
+  font-size: 12px;
 }
 
 .favorite-list {
@@ -581,7 +581,7 @@ h2 {
   border: 1px solid #302f40;
   border-radius: 5px;
   color: #d3cfde;
-  font-size: 8px;
+  font-size: 11px;
   line-height: 1.35;
   cursor: pointer;
 }
@@ -607,7 +607,7 @@ h2 {
 
 .favorite-option small {
   color: #89869b;
-  font-size: 7px;
+  font-size: 10px;
 }
 
 .interest-list {
@@ -623,7 +623,7 @@ h2 {
   border-radius: 20px;
   background: transparent;
   color: #c8c4d5;
-  font-size: 9px;
+  font-size: 12px;
   cursor: pointer;
   transition: background 150ms ease, border-color 150ms ease, color 150ms ease;
 }
@@ -658,7 +658,7 @@ h2 {
   border: 1px solid #302f40;
   border-radius: 5px;
   color: #c9c5d5;
-  font-size: 8px;
+  font-size: 11px;
   cursor: pointer;
 }
 
@@ -680,7 +680,7 @@ h2 {
   min-height: 16px;
   margin: 8px 0 0;
   color: #a9a3bb;
-  font-size: 9px;
+  font-size: 12px;
   text-align: center;
 }
 
@@ -695,7 +695,7 @@ h2 {
   border: 0;
   background: transparent;
   color: #928ea2;
-  font-size: 9px;
+  font-size: 12px;
   cursor: pointer;
 }
 
@@ -731,14 +731,14 @@ h2 {
   border-radius: 5px;
   color: #a7a3b6;
   font-family: var(--mono);
-  font-size: 8px;
+  font-size: 11px;
 }
 
 .results-summary {
   min-height: 23px;
   margin: 8px 0 13px;
   color: #9793a8;
-  font-size: 9px;
+  font-size: 12px;
 }
 
 .recommendation-list {
@@ -749,7 +749,7 @@ h2 {
 .recommendation-card {
   min-width: 0;
   display: grid;
-  grid-template-columns: 91px minmax(0, 1fr);
+  grid-template-columns: 132px minmax(0, 1fr);
   overflow: hidden;
   border: 1px solid #302f40;
   border-radius: 8px;
@@ -763,13 +763,13 @@ h2 {
 }
 
 .card-visual {
-  min-height: 127px;
+  min-height: 170px;
   display: grid;
   place-items: center;
   background:
     radial-gradient(circle at 30% 20%, rgba(255, 255, 255, 0.17), transparent 30%),
     linear-gradient(145deg, #5645a1, #282844 75%);
-  font-size: 24px;
+  font-size: 36px;
 }
 
 .visual-game {
@@ -800,7 +800,7 @@ h2 {
   gap: 10px;
   color: #a29db1;
   font-family: var(--mono);
-  font-size: 8px;
+  font-size: 11px;
 }
 
 .match-score {
@@ -813,7 +813,7 @@ h2 {
 .recommendation-content h3 {
   margin: 4px 0 3px;
   overflow-wrap: anywhere;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 600;
   line-height: 1.35;
 }
@@ -821,7 +821,7 @@ h2 {
 .recommendation-description {
   margin: 0 0 7px;
   color: #a7a3b4;
-  font-size: 9px;
+  font-size: 13px;
   line-height: 1.5;
 }
 
@@ -836,13 +836,47 @@ h2 {
   border: 1px solid #353344;
   border-radius: 4px;
   color: #bab5ca;
-  font-size: 7px;
+  font-size: 10px;
 }
 
 .match-reason {
   margin: 6px 0 0;
   color: #bcaeff;
-  font-size: 8px;
+  font-size: 12px;
+}
+
+.access-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 10px;
+}
+
+.access-links a,
+.article-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 9px;
+  border: 1px solid rgba(165, 139, 255, 0.42);
+  border-radius: 5px;
+  background: rgba(165, 139, 255, 0.08);
+  color: #d7cbff;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.access-links a:hover,
+.article-link:hover {
+  border-color: var(--purple);
+  background: rgba(165, 139, 255, 0.16);
+}
+
+.availability-note {
+  margin: 11px 0 0;
+  color: #9c98aa;
+  font-size: 12px;
 }
 
 .empty-state {
@@ -863,14 +897,14 @@ h2 {
 
 .empty-state h3 {
   margin: 8px 0 4px;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .empty-state p {
   max-width: 300px;
   margin: 0 auto;
   color: var(--muted);
-  font-size: 10px;
+  font-size: 13px;
 }
 
 .score-note {
@@ -878,7 +912,7 @@ h2 {
   gap: 7px;
   margin: 13px 0 0;
   color: #8d899d;
-  font-size: 9px;
+  font-size: 12px;
 }
 
 .score-note span {
@@ -899,7 +933,7 @@ h2 {
 
 .about-content > p {
   color: #b1adbf;
-  font-size: 11px;
+  font-size: 14px;
 }
 
 .formula-box {
@@ -915,14 +949,14 @@ h2 {
   margin-bottom: 8px;
   color: var(--purple);
   font-family: var(--mono);
-  font-size: 8px;
+  font-size: 10px;
   letter-spacing: 0.08em;
 }
 
 .formula-box code {
   color: #e0daf0;
   font-family: var(--mono);
-  font-size: 11px;
+  font-size: 13px;
   white-space: normal;
 }
 
@@ -945,7 +979,7 @@ h2 {
 
 .impact-layout > div:last-child > p:first-child {
   color: #b5b1c2;
-  font-size: 12px;
+  font-size: 15px;
 }
 
 .validation-note {
@@ -953,7 +987,7 @@ h2 {
   border-left: 2px solid var(--pink);
   background: rgba(243, 129, 196, 0.06);
   color: #a9a5b7;
-  font-size: 10px;
+  font-size: 13px;
 }
 
 .validation-note strong {
@@ -985,8 +1019,86 @@ h2 {
 .footer > a:last-child {
   margin: 0;
   color: #8f8b9e;
-  font-size: 9px;
+  font-size: 11px;
   text-decoration: none;
+}
+
+.science-section {
+  padding-block: 78px 84px;
+  background: #171722;
+  border-block: 1px solid rgba(185, 176, 222, 0.08);
+}
+
+.science-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.science-card {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #1c1c29;
+}
+
+.science-art {
+  min-height: 160px;
+  display: grid;
+  place-items: center;
+  background:
+    radial-gradient(circle at 50% 40%, rgba(255, 255, 255, 0.15), transparent 35%),
+    linear-gradient(135deg, #514387, #26253d);
+  font-size: 58px;
+}
+
+.science-card-research .science-art {
+  background:
+    radial-gradient(circle at 50% 40%, rgba(255, 255, 255, 0.15), transparent 35%),
+    linear-gradient(135deg, #376271, #242c40);
+}
+
+.science-copy {
+  padding: 21px;
+}
+
+.science-label {
+  margin-bottom: 8px;
+  color: var(--cyan);
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+}
+
+.science-copy h3 {
+  margin-bottom: 10px;
+  font-size: 22px;
+  line-height: 1.2;
+}
+
+.science-copy > p:not(.science-label, .citation) {
+  margin-bottom: 13px;
+  color: #b7b3c5;
+  font-size: 14px;
+}
+
+.citation {
+  margin-bottom: 14px;
+  color: #a29db1;
+  font-size: 12px;
+}
+
+.science-caveat {
+  margin: 20px 0 0;
+  padding: 15px 17px;
+  border-left: 2px solid var(--pink);
+  background: rgba(243, 129, 196, 0.06);
+  color: #b4afc0;
+  font-size: 14px;
+}
+
+.science-caveat strong {
+  color: #e7b5d5;
 }
 
 @media (max-width: 900px) {
@@ -1039,11 +1151,11 @@ h2 {
   }
 
   .topbar nav a {
-    font-size: 9px;
+    font-size: 11px;
   }
 
   .header-cta {
-    font-size: 9px;
+    font-size: 11px;
   }
 
   .hero {
@@ -1058,7 +1170,7 @@ h2 {
   }
 
   .hero-description {
-    font-size: 12px;
+    font-size: 15px;
   }
 
   .hero-art {
@@ -1071,7 +1183,7 @@ h2 {
     bottom: 22px;
     flex-direction: column;
     gap: 3px;
-    font-size: 7px;
+    font-size: 10px;
   }
 
   .how-section,
@@ -1106,12 +1218,12 @@ h2 {
   }
 
   .recommendation-card {
-    grid-template-columns: 74px minmax(0, 1fr);
+    grid-template-columns: 92px minmax(0, 1fr);
   }
 
   .card-visual {
-    min-height: 143px;
-    font-size: 19px;
+    min-height: 170px;
+    font-size: 29px;
   }
 
   .recommendation-content {
@@ -1119,17 +1231,40 @@ h2 {
   }
 
   .recommendation-content h3 {
-    font-size: 12px;
+    font-size: 16px;
   }
 
   .recommendation-description {
-    font-size: 8px;
+    font-size: 12px;
   }
 
   .about-section,
-  .impact-layout {
+  .impact-layout,
+  .science-grid {
     grid-template-columns: 1fr;
     gap: 25px;
+  }
+
+  .science-section {
+    padding-block: 61px;
+  }
+
+  .science-art {
+    min-height: 130px;
+    font-size: 48px;
+  }
+
+  .science-copy {
+    padding: 17px;
+  }
+
+  .science-copy h3 {
+    font-size: 20px;
+  }
+
+  .science-copy > p:not(.science-label, .citation),
+  .science-caveat {
+    font-size: 13px;
   }
 
   .about-section {

@@ -270,6 +270,45 @@ function rankRecommendations() {
     );
 }
 
+function getAccessOptions(item) {
+  const query = encodeURIComponent(item.title);
+  if (item.format === "Game") {
+    const storeUrls = {
+      steam: `https://store.steampowered.com/search/?term=${query}`,
+      playstation: `https://store.playstation.com/pt-br/search/${query}`,
+      xbox: `https://www.xbox.com/pt-BR/search?q=${query}`,
+      nintendo: `https://www.nintendo.com/us/search/#q=${query}`,
+    };
+    const storeLabels = {
+      steam: "Steam",
+      playstation: "PlayStation Store",
+      xbox: "Xbox Store",
+      nintendo: "Nintendo Store",
+    };
+
+    return (item.stores ?? []).map((store) => ({
+      label: `Buscar na ${storeLabels[store]}`,
+      url: storeUrls[store],
+    }));
+  }
+
+  const justWatch = {
+    label: "Ver onde assistir, alugar ou comprar",
+    url: `https://www.justwatch.com/br/busca?q=${query}`,
+  };
+  if (item.format === "Anime") {
+    return [
+      justWatch,
+      {
+        label: "Buscar na Crunchyroll",
+        url: `https://www.crunchyroll.com/search?q=${query}`,
+      },
+    ];
+  }
+
+  return [justWatch];
+}
+
 function createRecommendationCard(recommendation) {
   const { item, matchedFeatures, score } = recommendation;
   const card = document.createElement("article");
@@ -317,7 +356,18 @@ function createRecommendationCard(recommendation) {
   });
   reason.textContent = `Combina com: ${reasons.join(", ")}`;
 
-  content.append(meta, title, description, genres, reason);
+  const accessLinks = document.createElement("div");
+  accessLinks.className = "access-links";
+  for (const option of getAccessOptions(item)) {
+    const link = document.createElement("a");
+    link.href = option.url;
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    link.textContent = option.label;
+    accessLinks.append(link);
+  }
+
+  content.append(meta, title, description, genres, reason, accessLinks);
   card.append(visual, content);
   return card;
 }

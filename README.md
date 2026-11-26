@@ -50,6 +50,17 @@ As sugestões são explicáveis: cada resultado mostra os gêneros e algumas
 características compartilhadas com o perfil. O filtro exclui favoritos já
 marcados e respeita os formatos selecionados.
 
+Os cards também oferecem buscas nos catálogos das lojas de jogos cadastradas
+para cada título e, para filmes, séries e animes, no JustWatch; animes incluem
+uma busca adicional na Crunchyroll. Os links levam a buscas externas, não
+garantem disponibilidade, preço ou acesso em uma região específica. Use apenas
+lojas e serviços oficiais.
+
+Uma seção de leitura reúne dois artigos científicos sobre videogames e
+indicadores de saúde mental. São apresentados com os limites da evidência:
+resultados sobre jogos não demonstram que filmes ou séries tratem ansiedade,
+nem substituem acompanhamento profissional.
+
 Para criação de conteúdo e indústria do entretenimento, esse tipo de
 representação também pode organizar catálogos por afinidades de gênero e tema.
 Ela não substitui pesquisa de audiência nem prevê sucesso comercial.
